@@ -27,6 +27,27 @@ class BaseViewController: UIViewController {
         self.present(alertController, animated: true) {
         }
     }
+    func showAlert(title: String, message: String,btnsText: [String], OnCompletion: @escaping (_ onclikButtonName: String)->Void ) {
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
+        
+        for i in 0 ..< btnsText.count {
+            alertController.addAction(UIAlertAction(title: btnsText[i], style: UIAlertAction.Style.default, handler:
+                {(alert: UIAlertAction!) in
+                    OnCompletion(alert.title!)}))
+        }
+        self.present(alertController, animated: true, completion: nil)
+    }
+    func logout(){
+        let btnsText = ["OK".localized(),"Cancel".localized()]
+        self.showAlert(title: APP_NAME, message: "LogoutInfo".localized(), btnsText: btnsText) { (buttonName) in
+            if buttonName == "OK"{
+                AppUserDefaults.SharedInstance.reset()
+                let onBoarding = LoginViewController.instantiate(fromAppStoryboard: .Main)
+                let navication = UINavigationController(rootViewController: onBoarding)
+                UIApplication.shared.keyWindow?.rootViewController = navication
+            }
+        }
+    }
     
     /*
     // MARK: - Navigation

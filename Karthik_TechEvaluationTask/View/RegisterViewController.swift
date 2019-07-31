@@ -107,7 +107,7 @@ extension RegisterViewController : UITextFieldDelegate{
     }
 }
 extension RegisterViewController: RegisterProtocol {
-    func registersuccess() {
+    func registerSuccess() {
         m_EidTxtFld.text = ""
         m_NameTxtFld.text = ""
         m_IdBarahNoTxtFld.text = ""

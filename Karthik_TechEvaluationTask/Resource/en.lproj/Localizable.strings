@@ -17,6 +17,11 @@ UnifiedNoPlaceHolder = "Unified No";
 NamePlaceHolder = "Name";
 FieldEmptyMessage = "Please enter the ";
 EmailIdIsInvalid = "Invalid email id. Kindly try again";
-
 FeedList = "Feed List";
 Register = "Register";
+PasswordPlaceHolder = "Password";
+Login = "Login";
+AppName = "TechEvaluationTask";
+LogoutInfo = "Are you sure you want to log out ?";
+OK = "OK";
+Cancel = "Cancel";

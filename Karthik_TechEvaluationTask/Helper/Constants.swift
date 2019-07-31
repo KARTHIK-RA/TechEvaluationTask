@@ -9,8 +9,7 @@
 import Foundation
 
 
-let APP_NAME = "SUDC"
-
+let APP_NAME = "AppName".localized()
 let BaseApiUrl = Config.shared.baseUrl
 let GET_FEED = BaseApiUrl + "public/v1/news"
 let POST_CONCERN = BaseApiUrl + "iskan/v1/certificates/towhomitmayconcern"

@@ -16,6 +16,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        
+        if AppUserDefaults.SharedInstance.isAlreadyLogin {
+            let feedlistVc = NewsFeedViewController.instantiate(fromAppStoryboard: .Main)
+            let navication = UINavigationController(rootViewController: feedlistVc)
+            self.window?.rootViewController = navication
+            self.window?.makeKeyAndVisible()
+        }
         return true
     }
 

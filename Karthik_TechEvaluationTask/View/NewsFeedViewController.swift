@@ -46,6 +46,11 @@ class NewsFeedViewController: BaseViewController {
             self.viewModel.reset()
         }
     }
+    
+    
+    @IBAction func act_Logout(_ sender: UIBarButtonItem) {
+       self.logout()
+    }
     /*
     // MARK: - Navigation
 
