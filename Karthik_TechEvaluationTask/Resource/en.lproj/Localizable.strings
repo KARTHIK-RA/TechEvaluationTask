@@ -1,0 +1,22 @@
+/* 
+  Localizable.strings
+  Karthik_TechEvaluationTask
+
+  Created by Apple on 31/07/19.
+  Copyright © 2019 Apple. All rights reserved.
+*/
+
+
+
+EidPlaceHolder = "Eid";
+EmailAddressPlaceHolder = "Email Id";
+IdBarahNoPlaceHolder = "IdBarah No";
+Save = "Save";
+m_MobileNoPlaceHolder = "Mobile No";
+UnifiedNoPlaceHolder = "Unified No";
+NamePlaceHolder = "Name";
+FieldEmptyMessage = "Please enter the ";
+EmailIdIsInvalid = "Invalid email id. Kindly try again";
+
+FeedList = "Feed List";
+Register = "Register";
